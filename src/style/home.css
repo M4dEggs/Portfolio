@@ -1,0 +1,105 @@
+
+.home-page {
+    text-align: left;
+    width: 100%;
+    padding-left: 25%;
+    margin-top: 10%;
+    background-color: rgb(245, 243, 243);
+}  
+
+.header-box {
+    padding: 5px;
+    width: 50%;
+    background-color:rgb(255, 255, 255);
+    border: 2px solid rgba(0, 0, 0, 0.084);
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.307);
+    scale: 1.2;
+}
+
+.header-text-1 {
+    padding-top: 40px;
+    line-height: 0px;
+    font-size: 80px;
+    font-weight: 100;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.568);
+
+}
+
+.header-text-2 {
+    font-weight: 100;
+    font-size: 45px;
+}
+
+.header-text-2-1 {
+    color: rgb(90, 90, 255);
+    font-weight: bold;
+    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.421);
+}
+
+.p-text-1 {
+
+    color: rgba(0, 0, 0, 0.832);
+}
+
+.p-text-1-1 {
+    color: rgb(94, 94, 255);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+.btn-aboutme {
+    width: 100px;
+    height: 35px;
+    border-radius: 1000px;
+    border: none;
+    box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.577);
+    font-family: monospace;
+    font-weight: 800;
+    font-size: large;
+    color: rgba(0, 0, 0, 0.678);
+    background-color: rgb(183, 209, 233);
+    margin-bottom: 1%;
+    transition: all 0.4s;
+}
+
+.btn-contact{
+    width: 85px;
+    height: 35px;
+    border-radius: 1000px;
+    border: none;
+    box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.577);
+    font-family: monospace;
+    font-size: large;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.684);
+    background-color: rgb(183, 209, 233);
+    margin-bottom: 1%;
+    margin-left: 3%;
+    
+}
+
+.home-icon {
+    margin-top: -2%;
+    width: 95%;
+    height: 15px;
+    position: relative;
+    text-decoration: none;
+}
+
+
+.facebook-icon {
+    padding-bottom: 50px;
+    scale: 1.7;
+    margin-left: 100%;
+    color: black;
+
+}
+
+.youtube-icon {
+    padding-bottom: 170px;
+    scale: 2;
+    margin-left: 95%;
+    color: black;
+
+}
