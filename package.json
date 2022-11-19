@@ -1,6 +1,6 @@
 {
   "name": "main",
-  "homepage" : "http://www.sheshehanglimbu.com.np/",
+  "homepage": "http://www.sheshehanglimbu.com.np/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
