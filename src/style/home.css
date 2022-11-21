@@ -9,6 +9,7 @@
 
 .header-box {
     padding: 5px;
+    max-width: 900px;
     width: 50%;
     background-color:rgb(255, 255, 255);
     border: 2px solid rgba(0, 0, 0, 0.084);
@@ -17,7 +18,7 @@
 }
 
 .header-text-1 {
-    padding-top: 40px;
+    padding-top: 0px;
     line-height: 0px;
     font-size: 80px;
     font-weight: 100;
@@ -80,26 +81,222 @@
 }
 
 .home-icon {
-    margin-top: -2%;
-    width: 95%;
-    height: 15px;
+    display: flex;
     position: relative;
-    text-decoration: none;
+    margin-top: -4%;
+    margin-left: 90%;
+    padding-bottom: 20px;
+    width: 30%;
+    height: 15px;
+    
 }
 
 
 .facebook-icon {
-    padding-bottom: 50px;
     scale: 1.7;
-    margin-left: 100%;
     color: black;
-
 }
 
 .youtube-icon {
-    padding-bottom: 170px;
+    margin-left: 100%;
     scale: 2;
-    margin-left: 95%;
     color: black;
+}
+
+
+@media screen and (max-width:1400px) {
+
+    .home-page {
+        padding-left: 20%;
+    }
+
+    .header-box {
+        max-width:100% ;
+    }
+    .header-text-1 {
+        font-size: 80px;
+        padding-top: 0px;
+    }
+
+    .header-text-2 {
+        font-size: 38px;
+    }
+    .header-text-2-1 {
+        font-size: 40px;
+    }
+
+    .p-text-1 {
+        font-size: 14px;
+        color: rgba(0, 0, 0, 0.832);
+    }
+    
+    .p-text-1-1 {
+        color: rgb(94, 94, 255);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .home-icon {
+        margin-top: -6%;
+        height: 15px;
+    }
+    
+}
+
+@media screen and (max-width:1100px) {
+
+    .header-box {
+        max-width:65% ;
+    }
+
+    .header-text-2-1 {
+        font-size: 35px;
+    }
+
+    .p-text-1 {
+        font-size: 14px;
+        color: rgba(0, 0, 0, 0.832);
+    }
+    
+    .p-text-1-1 {
+        color: rgb(94, 94, 255);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .home-icon {
+        margin-left: 80%;
+        margin-top: -6%;
+        height: 15px;
+    }
+    
+}
+
+@media screen and (max-width:720px) {
+
+    .home-page {
+        margin-top: 15%;
+    }
+
+    .home-icon {
+        margin-left: 80%;
+        margin-top: -10%;
+        height: 15px;
+    }
+}
+
+@media screen and (max-width:620px) {
+    .header-box{
+        width: 100%
+    }
+
+    .header-text-1 {
+        font-size: 60px;
+        padding-top: 0px;
+    }
+
+    .header-text-2 {
+        font-size: 30px;
+    }
+    .header-text-2-1 {
+        font-size: 35px;
+    }
+
+    .home-icon {
+        margin-left: 80%;
+        margin-top: -10%;
+        height: 15px;
+    }
+
+    .facebook-icon {
+        scale: 1.2;
+    }
+
+    .youtube-icon {
+        margin-left: 50%;
+        scale: 1.4;
+    }
+
+    .btn-aboutme {
+        scale: 0.7;
+        height: 28px;
+        margin-left: -2%;
+    }
+
+    .btn-contact {
+        scale: 0.7;
+        height: 28px;
+        margin-left: -6%;
+    }
+
+    
+}
+
+@media screen and (max-width:500px) { 
+    .home-page {
+        padding-left: 15%;
+    }
+
+    .header-box {
+        padding: 0;
+        width: 100%;
+    }
+    .header-text-1 {
+        font-size: 50px;
+        padding-top: 0px;
+    }
+
+    .header-text-2 {
+        font-size: 25px;
+    }
+    .header-text-2-1 {
+        font-size: 28px;
+    }
+
+    .p-text-1 {
+        font-size: 14px;
+        color: rgba(0, 0, 0, 0.832);
+    }
+    
+    .p-text-1-1 {
+        color: rgb(94, 94, 255);
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    .facebook-icon {
+        scale: 1;
+    }
+
+    .youtube-icon {
+        margin-left: 50%;
+        scale: 1.2;
+    }
+
+    .btn-aboutme {
+        scale: 0.6;
+        height: 28px;
+        margin-left: -5%;
+    }
+
+    .btn-contact {
+        scale: 0.6;
+        height: 28px;
+        margin-left: -12%;
+    }
+
+    .home-icon {
+        margin-left: 75%;
+        margin-top: -10%;
+        height: 15px;
+    }   
+}
+
+@media screen and (max-width:390px) { 
+    .home-icon {
+        margin-left: 7%;
+        margin-top: 1%;
+        height: 15px;
+    } 
 
 }

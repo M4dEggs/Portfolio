@@ -5,7 +5,7 @@ import { FaFacebook, FaYoutube } from "react-icons/fa";
 const Home = () => {
   return (
     <div className="home-page">
-      <div className="header-box">
+      <div className="header-box" id="header-box">
         <h1 className="header-text-1">HI,</h1>
         <h1 className="header-text-2">
           I am studying
