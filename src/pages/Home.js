@@ -1,5 +1,5 @@
 import React from "react";
-import { Router, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { Styles } from "../style/home.css";
 import { FaFacebook, FaYoutube } from "react-icons/fa";
 const Home = () => {

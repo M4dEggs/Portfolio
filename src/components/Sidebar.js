@@ -1,81 +1,43 @@
 import React, { useState } from "react";
-import "../App.css";
-import {
-  FaHome,
-  FaBars,
-  FaUserAlt,
-  FaCodepen,
-  FaCommentAlt,
-} from "react-icons/fa";
-import { NavLink } from "react-router-dom";
+import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
-const Sidebar = ({ children }) => {
-  const [isOpen, setIsOpen] = useState(false);
-  const toggle = () => {
-    setIsOpen(!isOpen);
+const Navbar = () => {
+  const [mobileMenu, setMobileMenu] = useState(false);
+  const [mobileMenuIcon, setMobileMenuIcon] = useState(<AiOutlineMenu />);
+
+  const mobileToggle = () => {
+    setMobileMenu(mobileMenu ? false : true);
+    setMobileMenuIcon(mobileMenu ? <AiOutlineMenu /> : <AiOutlineClose />);
   };
-  const menuItem = [
-    {
-      path: "/",
-      name: "Home",
-      icon: <FaHome />,
-    },
-    {
-      path: "/projects",
-      name: "Projects",
-      icon: <FaCodepen />,
-    },
-    {
-      path: "/about",
-      name: "About",
-      icon: <FaUserAlt />,
-    },
-    {
-      path: "/contact",
-      name: "Contact",
-      icon: <FaCommentAlt />,
-    },
-  ];
+
   return (
-    <div className="container">
-      <div style={{ width: isOpen ? "100%" : "4%" }} className="sidebar">
-        <div className="top_section">
-          <h1
-            style={{
-              display: isOpen ? "block" : "none",
-              transition: " all 0.5s",
-            }}
-            className="logo"
-          >
-            Menu
-          </h1>
-          <div
-            style={{ marginLeft: isOpen ? "20px" : "-2px" }}
-            className="bars"
-          >
-            <FaBars onClick={toggle} />
-          </div>
+    <>
+      <header className="header flex">
+        <div className="logo-wraper">
+          <a className="logo" href="#">
+            LOGO
+          </a>
         </div>
-        {menuItem.map((item, index) => (
-          <NavLink
-            to={item.path}
-            key={index}
-            className="link"
-            activeclassName="active"
-          >
-            <div className="icon">{item.icon}</div>
-            <div
-              style={{ display: isOpen ? "block" : "none" }}
-              className="link_text"
-            >
-              {item.name}
-            </div>
-          </NavLink>
-        ))}
-      </div>
-      <main>{children}</main>
-    </div>
+        <button
+          onClick={mobileToggle}
+          className="mobile-toggle"
+          aria-controls="navbar"
+          aria-expanded={mobileMenu}
+        >
+          <span className="sr-only">{mobileMenuIcon}</span>
+        </button>
+        <nav>
+          <ul data-visible={mobileMenu} id="navbar" className="navbar flex">
+            <a href="/home">HOME</a>
+            <a href="/about">ABOUT</a>
+            <a href="/contact">CONTACT</a>
+          </ul>
+        </nav>
+      </header>
+      {/*-------------Mobile vsesion---------------*/}
+      <div></div>
+    </>
   );
 };
 
-export default Sidebar;
+export default Navbar;
